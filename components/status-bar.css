@@ -1,33 +1,44 @@
-.status-bar {
+.user-component {
+  justify-content: space-between;
+}
+
+.user-component,
+.user-component__column:first-child {
   display: flex;
-  width: 100%;
+  align-items: center;
+}
+
+.user-component__avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 26px;
+  margin-right: 20px;
+}
+
+.user-component__avatar--xl {
+  width: 65px;
+  height: 65px;
+}
+
+.user-component__title {
   font-weight: 600;
-  justify-content: center;
-  align-items: center;
-  padding: 5px 3px;
-  position: fixed;
-  top: 0;
+  font-size: 19.5px;
 }
 
-.status-bar__column {
-  width: 33%;
+.user-component__subtitle {
+  margin-top: 6.5px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
 }
 
-.status-bar__column:nth-child(2) {
+.user-component__column:last-child {
+  color: rgba(0, 0, 0, 0.5);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-.status-bar__column:last-child {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.status-bar__column:first-child span {
-  margin: 0px 3px;
-}
-
-.status-bar__column .fa-battery-three-quarters {
-  margin: 0px 3px;
+.user-component__time {
+  display: block;
+  margin-bottom: 7px;
 }
