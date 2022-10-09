@@ -17,12 +17,34 @@
 .nav__svg {
   width: 30px;
   height: 30px;
+  color: black;
+}
+
+.nav__svg:hover {
+  color: var(--red);
+  transition: color 0.3s ease-out;
+}
+
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
 }
 
 .nav__notification {
   position: absolute;
   left: 20px;
   bottom: 20px;
+}
+
+.nav__link:hover .nav__notification {
+  animation: notificationAnimation 5s ease-in-out infinite;
 }
 
 .nav__notification-small {
@@ -33,4 +55,17 @@
   position: absolute;
   left: 27px;
   bottom: 27px;
+}
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons-cog:hover {
+  animation: rotateCog 2s linear infinite;
 }

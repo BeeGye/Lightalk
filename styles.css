@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Nanum+Gothic&display=swap");
 @import "reset.css";
 @import "variables.css";
 
@@ -8,15 +8,29 @@
 @import "components/screen-header.css";
 @import "components/user-component.css";
 @import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
 /* screens */
 @import "screens/login.css";
 @import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
 
 body {
-  color: #2e363e;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Nanum Gothic", sans-serif;
+  color: white;
+  font-family: "Inter Tight", "Nanum Gothic", sans-serif;
   padding-top: 27px;
+  background-color: var(--purple);
+  padding-bottom: 35px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .main-screen {
