@@ -12,7 +12,7 @@
   align-items: center;
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (max-width: 1025px) {
   #no-mobile {
     display: none;
   }
